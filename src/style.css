@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'MyFont';
-    src: url('./Roboto-LightItalic.ttf') format('truetype'),
-      url('./Roboto-Regular.ttf') format('truetype');
+    src: url('./Roboto-Regular.ttf') format('truetype'),
+      url('./Roboto-LightItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
   }
   
    .hello {
-     color: red;
+     color: blue;
      font-family: 'MyFont';
      background: url('./icon.png');
    }
