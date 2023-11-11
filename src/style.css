@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'MyFont';
-    src: url('Roboto-LightItalic.tff') format('truetype'),
-      url('Roboto-Regular.tff') format('truetype');
+    src: url('./Roboto-LightItalic.ttf') format('truetype'),
+      url('./Roboto-Regular.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
   }
