@@ -2,6 +2,10 @@ import './style.css';
 import backImage from './backImageSm.jpg';
 import Logo from './logo.jpg';
 import printMe from './print.js';
+import Tab1Module from './tab1Module.js';
+import Tab2Module from './tab2Module.js';
+import Tab3Module from './tab3Module.js';
+import Tab4Module from './tab4Module.js';
 
 
 
@@ -39,11 +43,12 @@ function component() {
     
     element.classList.add('hello');
     
-    mainHeading.setAttribute('class', 'h1style'); 
-    subHeading.setAttribute('class', 'pstyle1'); 
-    wonderfulText.setAttribute('class', 'pstyle2' );
-    btn.setAttribute('class', 'joinBtn');
-    btn.onclick = printMe;        
+    mainHeading.setAttribute('id', 'h1style'); 
+    subHeading.setAttribute('id', 'pstyle1'); 
+    wonderfulText.setAttribute('id', 'pstyle2' );
+    btn.setAttribute('id', 'joinBtn');
+    btn.onclick = printMe; 
+
     menuDiv.setAttribute('id', 'menuDiv');
     myLogo.setAttribute('id', 'my-logo');
     menuNav.setAttribute('id', 'menuNav');
@@ -61,17 +66,25 @@ function component() {
     tab4.setAttribute('id', 'tab4');
     tab4.setAttribute('class', 'tab-content');
 
+    myLogo.addEventListener('click', function() {
+      
+      showTab('tab0')
+    });
     item1.addEventListener('click', function() {
+      Tab1Module.tab1Component();
       showTab('tab1')
     });
     
     item2.addEventListener('click', function() {
+      Tab2Module.tab2Component();
       showTab('tab2')
     });
     item3.addEventListener('click', function() {
+      Tab3Module.tab3Component();
       showTab('tab3')
     });
     item4.addEventListener('click', function() {
+      Tab4Module.tab4Component();
       showTab('tab4')
     });
     

@@ -38,19 +38,19 @@ h1,h2,h3,h4,h5,h6,div,p{
     margin-top:7px;
     /* border: red solid 1px; */
 }
-.h1style{
+#h1style{
   font-size: 4em;
   width: 70%;
   margin-bottom:25px;
 }
-.pstyle1{
+#pstyle1{
   font-size: 2.2em;
   font-family: Roboto;
   font-weight:300;
   width: 64%;
   margin-bottom: 15px;
 }
-.pstyle2{
+#pstyle2{
   font-size: 1.3em;
   width: 60%;
 }
@@ -70,7 +70,7 @@ h1,h2,h3,h4,h5,h6,div,p{
   flex-direction: column;
   justify-content: center;
   } 
-.joinBtn{
+#joinBtn{
   border-radius: 10px;
   height: 55px;
   width: 24%;
@@ -83,7 +83,6 @@ h1,h2,h3,h4,h5,h6,div,p{
     list-style: none;
     padding: 0;
 }
-
 .tab {
     cursor: pointer;
     padding: 10px 15px;
@@ -110,9 +109,12 @@ h1,h2,h3,h4,h5,h6,div,p{
 
 .tab-content {
     display: none;
+    height:525px;
+    
+
 }
 
 .tab-content.active {
     display: block;
-    padding: 20px;
+    padding: 10px 0;
 }

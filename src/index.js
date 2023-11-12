@@ -1,5 +1,6 @@
 // index.js
 import StartModule from './startModule';
+import Tab1Module from './tab1Module';
 // import BurgerModule from './burgerModule';
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -7,5 +8,5 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 // document.addEventListener('DOMContentLoaded', function () {
-//     BurgerModule.component();
+//     Tab1Module.tab1Component();
 // });
