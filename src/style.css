@@ -5,9 +5,110 @@
     font-weight: 600;
     font-style: normal;
   }
-  
-   .hello {
-     color: blue;
-     font-family: 'MyFont';
-     background: url('./icon.png');
-   }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+*{
+  box-sizing: border-box;
+  border:solid red 1px;
+}
+body{
+  width: 1080px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+h1,h2,h3,h4,h5,h6,div,p{
+  margin:0;
+  margin-bottom: 15px;
+}
+#menuDiv{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#menuNav{
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+#my-logo{
+  border-radius: 100px;
+    width: 90px;
+    height: 65px;
+    margin-top:7px;
+    /* border: red solid 1px; */
+}
+.h1style{
+  font-size: 4em;
+  width: 70%;
+  margin-bottom:25px;
+}
+.pstyle1{
+  font-size: 2.2em;
+  font-family: Roboto;
+  font-weight:300;
+  width: 64%;
+  margin-bottom: 15px;
+}
+.pstyle2{
+  font-size: 1.3em;
+  width: 60%;
+}
+.hello {
+  color: white;
+  height:800px;
+  width: 1080px;
+  padding:24px 40px;
+  font-family:'MyFont';
+  background: url('./backImageSm.jpg');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x:-105px ;
+  background-size: cover;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  } 
+.joinBtn{
+  border-radius: 10px;
+  height: 55px;
+  width: 24%;
+  margin-top:30px;
+  }
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #e4de48;;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    margin-right: 5px;
+    color: black;
+    width: 20%;
+    text-align: center;
+    border-radius: 15px 14px 0px 0px;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.tab.active {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    padding: 20px;
+}
