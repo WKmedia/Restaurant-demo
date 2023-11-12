@@ -12,9 +12,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 const StartModule = (function() 
 {
- 
+  
 function component() {
-    const elementContainer = document.createElement('div');
+    
     const element = document.createElement('div');
     const menuDiv = document.createElement('div');//nav container
     const menuNav = document.createElement('ul');//nav menu
