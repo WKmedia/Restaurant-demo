@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,h6,div,p{
   display: flex;
   width: 50%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
 }
 #my-logo{
@@ -56,14 +56,14 @@ h1,h2,h3,h4,h5,h6,div,p{
 }
 .hello {
   color: white;
-  height:800px;
+  height:715px;
   width: 1080px;
-  padding:24px 40px;
+  padding:10px 40px;
   font-family:'MyFont';
   background: url('./backImageSm.jpg');
   background-repeat: no-repeat;
   background-position-y: bottom;
-  background-position-x:-105px ;
+  background-position-x:0 ;
   background-size: cover;
   display: flex;
   margin: auto;
@@ -75,6 +75,8 @@ h1,h2,h3,h4,h5,h6,div,p{
   height: 55px;
   width: 24%;
   margin-top:30px;
+  background-color: #e4de48;
+  font-size: 1em;
   }
 .tabs {
     display: flex;
@@ -96,12 +98,14 @@ h1,h2,h3,h4,h5,h6,div,p{
 }
 
 .tab:hover {
-    background-color: #ddd;
+    color:#ddd;
+    background-color: #c5a110;
 }
 
 .tab.active {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    color:white;
+    background-color: #f6ecc4;
+    border-bottom: 5px solid #efc72a;
 }
 
 .tab-content {
