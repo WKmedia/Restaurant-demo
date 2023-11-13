@@ -56,19 +56,19 @@ h1,h2,h3,h4,h5,h6,div,p{
 }
 .hello {
   color: white;
-  height:715px;
+  height:980px;
   width: 1080px;
   padding:10px 40px;
   font-family:'MyFont';
   background: url('./backImageSm.jpg');
   background-repeat: no-repeat;
   background-position-y: bottom;
-  background-position-x:0 ;
+  background-position-x:-234px ;
   background-size: cover;
   display: flex;
   margin: auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   } 
 #joinBtn{
   border-radius: 10px;
@@ -109,12 +109,78 @@ h1,h2,h3,h4,h5,h6,div,p{
 
 .tab-content {
     display: none;
-    height:525px;
+    height:800px;
     
 
 }
 
 .tab-content.active {
-    display: block;
-    padding: 10px 0;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#tab-1-element{
+
+}
+#tab3.active{
+  display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:10px ;
+}
+#tab4.active{
+  flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    width: 997px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size:2em;
+    text-align: center;
+}
+.burger-container{
+  background-color: rgb(0 0 0 / 59%);
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}
+.recipe-container{
+  background-color: rgb(0 0 0 / 59%);
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

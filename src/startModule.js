@@ -57,6 +57,7 @@ function component() {
     item2.setAttribute('class', 'tab');
     item3.setAttribute('class', 'tab');
     item4.setAttribute('class', 'tab');
+    item1.setAttribute('class', 'tab');
     tab1.setAttribute('id', 'tab1');
     tab1.setAttribute('class', 'tab-content');
     tab2.setAttribute('id', 'tab2');
@@ -66,26 +67,67 @@ function component() {
     tab4.setAttribute('id', 'tab4');
     tab4.setAttribute('class', 'tab-content');
 
-    myLogo.addEventListener('click', function() {
-      
-      showTab('tab0')
-    });
+   
     item1.addEventListener('click', function() {
-      Tab1Module.tab1Component();
-      showTab('tab1')
+      const existingTabContent = document.getElementById('tab1');
+
+    // Check if the tab1 content is already populated
+    if (!existingTabContent.hasChildNodes()) {
+        // If not, create a new tab content
+        Tab1Module.tab1Component();
+        
+        // Show the tab
+        showTab('tab1');
+    } else {
+        // If the tab content already exists, just show the tab
+        showTab('tab1');
+    }
     });
     
     item2.addEventListener('click', function() {
-      Tab2Module.tab2Component();
-      showTab('tab2')
+      const existingTabContent = document.getElementById('tab2');
+
+      // Check if the tab2 content is already populated
+      if (!existingTabContent.hasChildNodes()) {
+          // If not, create a new tab content
+          Tab2Module.tab2Component();
+          
+          // Show the tab
+          showTab('tab2');
+      } else {
+          // If the tab content already exists, just show the tab
+          showTab('tab2');
+      }
     });
     item3.addEventListener('click', function() {
-      Tab3Module.tab3Component();
-      showTab('tab3')
+      const existingTabContent = document.getElementById('tab3');
+
+      // Check if the tab3 content is already populated
+      if (!existingTabContent.hasChildNodes()) {
+          // If not, create a new tab content
+          Tab3Module.tab3Component();
+          
+          // Show the tab
+          showTab('tab3');
+      } else {
+          // If the tab content already exists, just show the tab
+          showTab('tab3');
+      }
     });
     item4.addEventListener('click', function() {
-      Tab4Module.tab4Component();
-      showTab('tab4')
+      const existingTabContent = document.getElementById('tab4');
+
+    // Check if the tab4 content is already populated
+    if (!existingTabContent.hasChildNodes()) {
+        // If not, create a new tab content
+        Tab4Module.tab4Component();
+        
+        // Show the tab
+        showTab('tab4');
+    } else {
+        // If the tab content already exists, just show the tab
+        showTab('tab4');
+    }
     });
     
     
@@ -135,6 +177,9 @@ function component() {
 
 
     document.body.appendChild(element);
+    return{
+      menuDiv,
+    }
   }
 
   function showTab(tabId) {
