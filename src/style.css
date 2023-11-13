@@ -119,9 +119,7 @@ h1,h2,h3,h4,h5,h6,div,p{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#tab-1-element{
 
-}
 #tab3.active{
   display: inline-flex;
     flex-wrap: wrap;
