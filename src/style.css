@@ -17,7 +17,13 @@ body{
 }
 h1,h2,h3,h4,h5,h6,div,p{
   margin:0;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+}
+.h1Tab1, .h1Tab2, .h1Tab3, .h1Tab4{
+  font-size:3em;
+  width:100%;
+  display: flex;
+  justify-content: center;
 }
 #menuDiv{
   display: flex;
@@ -27,43 +33,48 @@ h1,h2,h3,h4,h5,h6,div,p{
 #menuNav{
   display: flex;
   width: 50%;
+  height: 50px;
   flex-wrap: wrap;
+  align-content: space-evenly;
   justify-content: center;
   list-style: none;
+  margin-bottom: 0px;
+  border-bottom: 3px solid white;
 }
 #my-logo{
   border-radius: 100px;
     width: 90px;
-    height: 65px;
+    /* height: 65px; */
     margin-top:7px;
     /* border: red solid 1px; */
 }
 #h1style{
   font-size: 4em;
   width: 70%;
-  margin-bottom:25px;
+  margin:100px 25px 25px 25px;
 }
 #pstyle1{
   font-size: 2.2em;
   font-family: Roboto;
   font-weight:300;
-  width: 64%;
-  margin-bottom: 15px;
+  width: 70%;
+  margin: 15px 0 15px 25px;
 }
 #pstyle2{
   font-size: 1.3em;
-  width: 60%;
+  width: 50%;
+  margin: 15px 0 15px 25px;
 }
 .hello {
   color: white;
-  height:980px;
+  /* height:980px; */
   width: 1080px;
   padding:10px 40px;
   font-family:'MyFont';
   background: url('./backImageSm.jpg');
   background-repeat: no-repeat;
   background-position-y: bottom;
-  background-position-x:-234px ;
+  /* background-position-x:-234px ; */
   background-size: cover;
   display: flex;
   margin: auto;
@@ -74,9 +85,10 @@ h1,h2,h3,h4,h5,h6,div,p{
   border-radius: 10px;
   height: 55px;
   width: 24%;
-  margin-top:30px;
+  margin:15px 0px 15px 25px;
   background-color: #e4de48;
   font-size: 1em;
+  color:black;
   }
 .tabs {
     display: flex;
@@ -85,31 +97,33 @@ h1,h2,h3,h4,h5,h6,div,p{
 }
 .tab {
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 10px 0px;
     background-color: #e4de48;;
     border: 1px solid #ddd;
     border-bottom: none;
-    margin-right: 5px;
+    margin-right: 10px;
     color: black;
-    width: 20%;
+    width: 22%;
     text-align: center;
+    font-size: 1.2em;
     border-radius: 15px 14px 0px 0px;
 }
 
+
 .tab:hover {
-    color:#ddd;
-    background-color: #c5a110;
+  color: #fff;
+  background-color: #312d1d;
 }
 
 .tab.active {
-    color:white;
-    background-color: #f6ecc4;
-    border-bottom: 5px solid #efc72a;
+  color: #fff;
+  background-color: #312d1d;
+    border-bottom: 5px solid #221e0f;
 }
 
 .tab-content {
     display: none;
-    height:800px;
+    /* height:800px; */
     
 
 }
@@ -117,12 +131,13 @@ h1,h2,h3,h4,h5,h6,div,p{
 .tab-content.active {
   display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-content: flex-start;
 }
 
 #tab3.active{
-  display: inline-flex;
-    flex-wrap: wrap;
+  /* display: inline-flex; */
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: flex-start;
     gap:10px ;
@@ -138,16 +153,31 @@ h1,h2,h3,h4,h5,h6,div,p{
     text-align: center;
 }
 .burger-container{
+  padding: 20px;
   background-color: rgb(0 0 0 / 59%);
-    width: 200px;
-    height: 200px;
-    overflow: auto;
+  width: 260px;
+  height: 200px;
+  overflow: auto;
+  display: inline-table;
+  margin: 29px 0px;
+  border-radius: 30px;
+}
+.burger-img{
+  width: 250px;
+  /* margin-left: 5px; */
 }
 .recipe-container{
-  background-color: rgb(0 0 0 / 59%);
-    width: 200px;
+    padding: 20px;  
+    background-color: rgb(0 0 0 / 59%);
+    width: 260px;
     height: 200px;
     overflow: auto;
+    display: inline-table;
+    margin: 20px 0px;
+    border-radius: 30px;
+}
+.recipe-img{
+  width: 275px;
 }
 .container {
   background-color: #fff;
