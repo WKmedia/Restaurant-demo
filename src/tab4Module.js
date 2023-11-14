@@ -1,7 +1,5 @@
 import './style.css';
-import backImage from './backImageSm.jpg';
-import Logo from './logo.jpg';
-import StartModule from './startModule';
+
 
 
 const Tab4Module = (function() {

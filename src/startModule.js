@@ -144,7 +144,7 @@ function component() {
     
 
     element.innerHTML = ('Hello there!');
-    btn.innerHTML = 'Click me and check the console!';   
+    btn.innerHTML = 'Find out more!';   
     myImage.src = backImage;   
     mainHeading.textContent = 'Join us for an extraordinary culinary journey.';    
     subHeading.textContent = 'Book your table today and savor the magic of Our Wonderful Restaurant.';    
@@ -194,8 +194,6 @@ function component() {
             const selectedContent = document.getElementById(tabId);
             selectedContent.classList.add('active');
 
-            
-    console.log(`Showing ${tabId}`);
 }
  
 

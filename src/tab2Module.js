@@ -70,14 +70,14 @@ function tab2Component() {
         description: 'Your next batch of tacos, burritos, or nachos starts with this back-pocket carne asada recipe, supercharged with smoky chile and puckery fresh lime juice.'
       }
     ];
-    // const parentContainer = document.getElementById('tab2');
+    
 
 
 
     tab2Heading.setAttribute('class', 'h1Tab2'); 
-    // subHeading.setAttribute('class', 'style1Tab2'); 
+    
     wonderfulText.setAttribute('class', 'style2Tab2' );
-    // btn.setAttribute('class', 'tab2-joinBtn');
+    
 
   const element = document.getElementById('h1style');
    element.style.display = 'none';
@@ -91,18 +91,12 @@ function tab2Component() {
   tab2Element.setAttribute('id', 'tab-2-element');
   tab2Element.style.width ='100%';
 
-  tab2Heading.textContent = 'Steak Dinner\'s';    
-  // subHeading.textContent = ;    
+  tab2Heading.textContent = 'Steak Dinner\'s';       
   wonderfulText.textContent = 'Opened in 2008, the restaurant drove a culinary revolution in NYC and across the country.';
 
 
   tab2Div.prepend(tab2Heading);
-  // tab2Div.append(subHeading);
   tab2Element.append(wonderfulText);   
-  // tab2Element.appendChild(btn);
-  // tab2Div.append(tab2Element);
-
-
   tab2Div.append(tab2Element);
 
    // Iterate through burgerInfo

@@ -8,7 +8,7 @@ import Burger6 from './burger6.jpg';
 import Burger7 from './burger7.jpg';
 import Burger8 from './burger8.jpg';
 import Burger9 from './burger9.png';
-import StartModule from './startModule';
+
 
 
 const Tab1Module = (function() {
@@ -17,7 +17,6 @@ const Tab1Module = (function() {
  
 function tab1Component() {
   const myLogo = document.getElementById('my-logo')
-  console.log(myLogo)
   const tab1Div = document.getElementById('tab1');
   const tab1Element = document.createElement('div');
   const tab1Heading = document.createElement('h1');
@@ -76,8 +75,7 @@ function tab1Component() {
   // const parentContainer = document.getElementById('tab1');
 
   
-  tab1Heading.setAttribute('class', 'h1Tab1'); 
-  // subHeading.setAttribute('class', 'style1Tab1'); 
+  tab1Heading.setAttribute('class', 'h1Tab1');
   wonderfulText.setAttribute('class', 'style2Tab1' );
   btn.setAttribute('class', 'tab1-joinBtn');
 
@@ -104,11 +102,8 @@ function tab1Component() {
 
 
   tab1Div.append(tab1Heading);
-  // tab1Element.append(subHeading);
+ 
   tab1Element.append(wonderfulText);   
-  // tab1Element.appendChild(btn);
-  
-
     
 
     tab1Div.append(tab1Element);

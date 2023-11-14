@@ -48,9 +48,6 @@ function tab3Component() {
 
 
   tab3Div.append(tab3Heading);
-  // tab3Element.append(subHeading);
-  // tab3Element.append(wonderfulText);   
-  // tab3Element.appendChild(btn);
   tab3Div.append(tab3Element);
   
    // Iterate through burgerInfo
@@ -80,11 +77,7 @@ sideItems.forEach(sideItem => {
   
 });
  
-
- 
-
-    
-  }
+}
      
     return {
       tab3Component:tab3Component,
