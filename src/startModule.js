@@ -57,7 +57,7 @@ function component() {
     item2.setAttribute('class', 'tab');
     item3.setAttribute('class', 'tab');
     item4.setAttribute('class', 'tab');
-    item1.setAttribute('class', 'tab');
+    
     tab1.setAttribute('id', 'tab1');
     tab1.setAttribute('class', 'tab-content');
     tab2.setAttribute('id', 'tab2');
@@ -130,13 +130,11 @@ function component() {
     }
     });
     
-    
 
-    
-    // menuDiv.textContent = 'Menu Container';
     myLogo.src = Logo;
-    
-    // menuNav.textContent = 'menu Nav';
+    myLogo.addEventListener('click', function() {
+      StartModule.component();
+    });
 
     item1.textContent = 'Burger\'s';
     item2.textContent = 'Steak\'s';

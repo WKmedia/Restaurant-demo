@@ -89,6 +89,7 @@ function tab2Component() {
    joinBtn.style.display = 'none';
 
   tab2Element.setAttribute('id', 'tab-2-element');
+  tab2Element.style.width ='100%';
 
   tab2Heading.textContent = 'Steak Dinner\'s';    
   // subHeading.textContent = ;    

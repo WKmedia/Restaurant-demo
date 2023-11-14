@@ -24,16 +24,16 @@ function tab3Component() {
     const subHeading = document.createElement('p');
     const wonderfulText = document.createElement('p');
     const btn = document.createElement('button');
-    const parentContainer = document.getElementById('tab3');
+    
     const sideItems = [
-      { title: 'Homestyle Mashed Potatoes', price: 3.99 },
-      { title: 'Dressed Baked Potato', price: 3.99 },
-      { title: 'Aussie Fries', price: 3.99 },
-      { title: 'Sweet Potato with Honey & Brown Sugar', price: 3.99 },
-      { title: 'Fresh Steamed Seasonal Veggies', price: 3.99 },
-      { title: 'Seasoned Rice', price: 3.99 },
-      { title: 'Steakhouse Mac & Cheese', price: 5.99 },
-      { title: 'Loaded Mashed Potatoes', price: 4.99 }
+      { title: 'Homestyle Mashed Potatoes', description:'Creamy and velvety mashed potatoes made with Our Homestyle hand-selected potatoes, mashed to perfection and blended with butter, cream, and a touch of seasoning.', price: 3.99 },
+      { title: 'Dressed Baked Potato',description:'symphony of toppings, creating a flavor flawlessly fluffy interior topped with a luscious blend of sour cream, melted cheddar cheese, crispy bacon bits, and a sprinkle of chives.', price: 3.99 },
+      { title: 'Aussie Fries', description: 'Sliced from premium potatoes and perfectly seasoned, crispiness and flavor, golden  fluffy interior, accompanied by your favorite dipping sauce.',price: 3.99 },
+      { title: 'Sweet Potato with Honey & Brown Sugar',description:'tender, oven-roasted sweet potatoes, natural sugars caramelized to perfection, combination of honey and brown sugar glaze.', price: 3.99 },
+      { title: 'Fresh Steamed Seasonal Veggies', description:'vibrant medley of colors and textures in the crispness of green beans, the tenderness of broccoli, and the sweetness of carrots.', price: 3.99 },
+      { title: 'Seasoned Rice', description: 'medley of flavors, from the warmth of cumin to the subtle hints of herbs, transforms a simple bowl of rice', price: 3.99 },
+      { title: 'Steakhouse Mac & Cheese', description: ' combines the creamy richness of classic macaroni and cheese with tender pieces of perfectly grilled steak smothered in a velvety and robust cheese sauce.', price: 5.99 },
+      { title: 'Loaded Mashed Potatoes',description: 'a velvety bed of mashed potatoes adorned with generous portions of crispy bacon, melted cheddar cheese, chopped green onions, and a dollop of sour cream. ', price: 4.99 }
     ]; 
     
 
@@ -62,16 +62,21 @@ sideItems.forEach(sideItem => {
   // Create elements for title and description
   const titleElement = document.createElement('h2');
   titleElement.textContent = sideItem.title;
-
+  
   const descriptionElement = document.createElement('p');
-  descriptionElement.textContent = sideItem.price;
+  descriptionElement.textContent = sideItem.description;
+
+  const priceElement = document.createElement('p');
+  priceElement.textContent = sideItem.price;
 
   // Append title and description to the sideItem div
+  
   sideItemDiv.appendChild(titleElement);
   sideItemDiv.appendChild(descriptionElement);
+  sideItemDiv.appendChild(priceElement);
 
   // Append the sideItem div to the parent container
-  parentContainer.appendChild(sideItemDiv);
+  tab3Div.appendChild(sideItemDiv);
   
 });
  
