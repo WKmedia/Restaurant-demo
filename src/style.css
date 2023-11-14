@@ -76,8 +76,8 @@ h1,h2,h3,h4,h5,h6,div,p{
   font-family:'MyFont';
   background: url('./backImageSm.jpg');
   background-repeat: no-repeat;
-  background-position-y: bottom;
-  
+  background-position-y: -17px;
+  background-position-x: -285px;
   background-size: cover;
   display: flex;
   margin: auto;
