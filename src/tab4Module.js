@@ -5,6 +5,25 @@ import StartModule from './startModule';
 
 
 const Tab4Module = (function() {
+  const bookingFormContainer = document.createElement('div');
+  const bookingFormTitle = document.createElement('h1')
+  const bookForm = document.createElement('form');
+  const formLabelName = document.createElement('label');
+  const inputFieldName = document.createElement('input');
+
+  const formLabelEmail = document.createElement('label');
+  const inputFieldEmail = document.createElement('input');
+
+  const formLabelPhone = document.createElement('label');
+  const inputFieldPhone = document.createElement('input');
+
+  const formLabelDate = document.createElement('label');
+  const inputFieldDate = document.createElement('input');
+
+  const formLabelMessage = document.createElement('label');
+  const inputFieldMessage = document.createElement('textarea');
+
+  const submitFormBtn = document.createElement('button');
 
  
 function tab4Component() {
@@ -35,34 +54,13 @@ function tab4Component() {
     wonderfulText.textContent = ['item1', 'item2', 'item3'];
   
   
-    tab4Element.append(tab4Heading);
-    tab4Element.append(subHeading);
-    // tab4Element.append(wonderfulText);   
-    // tab4Element.appendChild(btn);
-    
-    
+    tab4Element.append(tab4Heading);    
     tab4Div.prepend(tab4Element);
 
+   
+    
   const BookForm =(function () {
-    const bookingFormContainer = document.createElement('div');
-    const bookingFormTitle = document.createElement('h1')
-    const bookForm = document.createElement('form');
-    const formLabelName = document.createElement('label');
-    const inputFieldName = document.createElement('input');
-
-    const formLabelEmail = document.createElement('label');
-    const inputFieldEmail = document.createElement('input');
-
-    const formLabelPhone = document.createElement('label');
-    const inputFieldPhone = document.createElement('input');
-
-    const formLabelDate = document.createElement('label');
-    const inputFieldDate = document.createElement('input');
-
-    const formLabelMessage = document.createElement('label');
-    const inputFieldMessage = document.createElement('input');
-
-    const submitFormBtn = document.createElement('button');
+  
     
     bookingFormContainer.setAttribute('class','container');
     bookingFormTitle.setAttribute('id','h1-Booking');
@@ -126,13 +124,6 @@ function tab4Component() {
     bookForm.appendChild(submitFormBtn);
 
 
-
-    
-
-    // const bookingForm = document.getElementById('bookingForm');
-    // console.log(bookingForm);
-    console.log(bookForm);
-
   bookForm.addEventListener('submit', function (event) {
       event.preventDefault();
 
@@ -142,27 +133,24 @@ function tab4Component() {
       for (const [key, value] of formData.entries()) {
           console.log(`${key}: ${value}`);
       }
-
-      inputFieldName.textContent = '';
-      inputFieldEmail.textContent = '';
-      inputFieldPhone.textContent = '';
-      inputFieldDate.textContent = '';
-      inputFieldMessage.textContent = '';
+    const inName = document.getElementById('name');
+    inName.value = '';
+    const inEmail = document.getElementById('email');   
+    inEmail.value = '';
+    const inPhone = document.getElementById('phone'); 
+    inPhone.value = '';  
+    const inDate = document.getElementById('date');  
+    inDate.value = '';
+    const inMessage = document.getElementById('message');
+    inMessage.value = '';
+      
       return formData;
   });
-    
-  tab4Element.append(bookingFormContainer);
-  // bookForm.append(bookingForm);
   
-  return {
-  
-  }
    
   })();
-
   
-  
-  
+tab4Element.append(bookingFormContainer);
   }
    
   
