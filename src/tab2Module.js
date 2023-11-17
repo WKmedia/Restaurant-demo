@@ -134,8 +134,8 @@ function tab2Component() {
     imageContainer.appendChild(imageElement);
     // Append title and description to the recipe div
     recipeDiv.appendChild(titleElement);
-    recipeDiv.appendChild(descriptionElement);
-    recipeDiv.appendChild(priceElement);
+    titleElement.appendChild(descriptionElement);
+    titleElement.appendChild(priceElement);
   
     // Append the recipe div to the parent container
    

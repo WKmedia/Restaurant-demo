@@ -130,8 +130,8 @@ function tab1Component() {
     burgerDiv.appendChild(imageContainer);
     imageContainer.appendChild(imageElement);
     burgerDiv.appendChild(titleElement);
-    burgerDiv.appendChild(descriptionElement);
-    burgerDiv.appendChild(priceElement);
+    titleElement.appendChild(descriptionElement);
+    titleElement.appendChild(priceElement);
   
     // Append the burger div to the parent container
     tab1Div.appendChild(burgerDiv);

@@ -73,8 +73,8 @@ sideItems.forEach(sideItem => {
   // Append title and description to the sideItem div
   
   sideItemDiv.appendChild(titleElement);
-  sideItemDiv.appendChild(descriptionElement);
-  sideItemDiv.appendChild(priceElement);
+  titleElement.appendChild(descriptionElement);
+  titleElement.appendChild(priceElement);
 
   // Append the sideItem div to the parent container
   tab3Div.appendChild(sideItemDiv);
