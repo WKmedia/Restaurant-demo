@@ -1,7 +1,4 @@
 import './style.css';
-import backImage from './backImageSm.jpg';
-import Logo from './logo.jpg';
-import StartModule from './startModule';
 import Dish1 from './Cote-de1.jpg';
 import Dish2 from './Cote-de2.jpg';
 import Dish3 from './Cote-de3.jpg';
@@ -20,54 +17,61 @@ function tab2Component() {
   const tab2Div = document.getElementById('tab2');
     const tab2Element = document.createElement('div');
     const tab2Heading = document.createElement('h1');
-    const subHeading = document.createElement('p');
     const wonderfulText = document.createElement('p');
-    const btn = document.createElement('button');
     const recipes = [
       {
         image: Dish1,
         title: 'Côte de Bœuf au Poivre',
-        description: 'For this bone-in ribeye steak recipe (a.k.a. côte de bœuf), you’ll encrust the meat with three types of peppercorns and make a silk.'
+        description: 'For this bone-in ribeye steak recipe (a.k.a. côte de bœuf), you’ll encrust the meat with three types of peppercorns and make a silk.',
+        price: '14.99'
       },
       {
         image: Dish2,
         title: 'Steak With Preserved-Lemon-Marinated Tomatoes',
-        description: 'Toss tomatoes in a simple preserved lemon, soy sauce, and chile marinade while you sear a well-marbled steak for a dinner for two in no time.'
+        description: 'Toss tomatoes in a simple preserved lemon, soy sauce, and chile marinade while you sear a well-marbled steak for a dinner for two in no time.',
+        price: '24.99'
       },
       {
         image: Dish3,
         title: 'Steakhouse Salad With Balsamic and Blue Cheese',
-        description: 'You may be tempted to eat this tangy steak all by itself, but the payoff of building it into a salad with funky blue cheese and juicy.'
+        description: 'You may be tempted to eat this tangy steak all by itself, but the payoff of building it into a salad with funky blue cheese and juicy.',
+        price: '18.99'
       },
       {
         image: Dish4,
         title: 'Summer Roll Rice Noodles',
-        description: 'A nutty, savory sauce made from pantry staples anchors this cold rice noodle and steak dish inspired by Vietnamese summer rolls.'
+        description: 'A nutty, savory sauce made from pantry staples anchors this cold rice noodle and steak dish inspired by Vietnamese summer rolls.',
+        price: '34.99'
       },
       {
         image: Dish5,
         title: 'Mishkaki-Style Strip Steak With Kachumber',
-        description: 'Kachumber, a classic side salad in Swahili cuisine, balances out rich steak whose marinade is inspired by East African grille.'
+        description: 'Kachumber, a classic side salad in Swahili cuisine, balances out rich steak whose marinade is inspired by East African grille.',
+        price: '24.99'
       },
       {
         image: Dish6,
         title: 'Juicy Chicken-Fried Steak With Creamy Gravy',
-        description: 'A touch of cornstarch ensures a crisp coating for these shallow-fried cutlets.'
+        description: 'A touch of cornstarch ensures a crisp coating for these shallow-fried cutlets.',
+        price: '44.99'
       },
       {
         image: Dish7,
         title: 'Steak Fajitas',
-        description: 'Our best steak fajitas recipe features thin strips of skirt steak, marinated in citrus and grilled over mesquite, stuffed into warm flour.'
+        description: 'Our best steak fajitas recipe features thin strips of skirt steak, marinated in citrus and grilled over mesquite, stuffed into warm flour.',
+        price: '14.99'
       },
       {
         image: Dish8,
         title: 'Super-Citrusy Carne Asada',
-        description: 'Your next batch of tacos, burritos, or nachos starts with this back-pocket carne asada recipe, supercharged with smoky chile and puckery fresh lime juice.'
+        description: 'Your next batch of tacos, burritos, or nachos starts with this back-pocket carne asada recipe, supercharged with smoky chile and puckery fresh lime juice.',
+        price: '14.99'
       },
       {
         image: Dish9,
         title: 'Texmex Carne Asada',
-        description: 'Your next batch of tacos, burritos, or nachos starts with this back-pocket carne asada recipe, supercharged with smoky chile and puckery fresh lime juice.'
+        description: 'Your next batch of tacos, burritos, or nachos starts with this back-pocket carne asada recipe, supercharged with smoky chile and puckery fresh lime juice.',
+        price: '19.99'
       }
     ];
     
@@ -92,7 +96,7 @@ function tab2Component() {
   tab2Element.style.width ='100%';
 
   tab2Heading.textContent = 'Steak Dinner\'s';       
-  wonderfulText.textContent = 'Opened in 2008, the restaurant drove a culinary revolution in NYC and across the country.';
+  wonderfulText.textContent = 'Elevating Your Meal: Savory Selections to Enhance Every Bite of Your Culinary Journey. Book your table today and savor the magic of Our Wonderful Restaurant.';
 
 
   tab2Div.prepend(tab2Heading);
@@ -115,16 +119,23 @@ function tab2Component() {
 
     const titleElement = document.createElement('h2');
     titleElement.textContent = recipe.title;
+    titleElement.classList.add('title-item');
 
   
     const descriptionElement = document.createElement('p');
     descriptionElement.textContent = recipe.description;
+    descriptionElement.classList.add('discript-element')
+
+    const priceElement = document.createElement('p');
+    priceElement.classList.add('price-element');
+    priceElement.textContent = recipe.price;
 
     recipeDiv.appendChild(imageContainer)
     imageContainer.appendChild(imageElement);
     // Append title and description to the recipe div
     recipeDiv.appendChild(titleElement);
     recipeDiv.appendChild(descriptionElement);
+    recipeDiv.appendChild(priceElement);
   
     // Append the recipe div to the parent container
    

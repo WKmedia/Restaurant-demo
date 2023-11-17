@@ -26,26 +26,19 @@ h1,h2,h3,h4,h5,h6,div,p{
   display: flex;
   justify-content: center;
 }
-#menuDiv{
-  /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-}
+
 #menuNav{
   display: flex;
-  /* width: 50%;
-  height: 50px; */
   flex-wrap: wrap;
   align-content: space-evenly;
   justify-content: center;
   list-style: none;
   margin-bottom: 0px;
-  border-bottom: 3px solid white;
+  border-bottom: 1px solid white;
 }
 #my-logo{
   border-radius: 100px;
     width: 90px;
-    
     margin-top:7px;
     border-radius: 100px;
     width: 150px;
@@ -68,11 +61,17 @@ h1,h2,h3,h4,h5,h6,div,p{
   width: 70%;
   margin: 15px 0 15px 25px;
 }
+
+.style1Tab4{
+  width: 50%;
+  padding: 74px 20px;
+  font-size: 1.3em;
+  background-color: #0000003b;
+}
 .hello {
   color: white;
-
   width: 1080px;
-  padding:40px;
+  padding: 0px 40px 40px;
   font-family:'MyFont';
   background: url('./backImageSm.jpg');
   background-repeat: no-repeat;
@@ -114,7 +113,9 @@ h1,h2,h3,h4,h5,h6,div,p{
 
 li.tab.active{
   color: #fff;
-  background-color: #8b741c;
+    margin-bottom: -1px;
+    border: 1px solid white;
+    background-color: #8b741c;
 }
 .tab:hover {
   color: #fff;
@@ -124,7 +125,7 @@ li.tab.active{
 .tab.active {
   color: #fff;
   background-color: #312d1d;
-    border-bottom: 5px solid #221e0f;
+    /* border-bottom: 5px solid #221e0f; */
 }
 
 .tab-content {
@@ -137,14 +138,13 @@ li.tab.active{
   display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: flex-start;
 }
 
 #tab3.active{
     flex-direction: column;
     justify-content: flex-start;
-    gap:10px ;
-    font-size: 1.3em;
+    
+    
 }
 #tab4.active{
   flex-direction: column;
@@ -153,51 +153,58 @@ li.tab.active{
     width: 997px;
     align-items: center;
     justify-content: flex-start;
-    font-size:1.3em;
+    /* font-size:1.3em; */
     text-align: center;
 }
 .burger-container{
   padding: 20px;
-  background-color: rgb(0 0 0 / 59%);
+  background-color: #0c0c0c57;
   width: 260px;
   height: 200px;
   overflow: auto;
   display: inline-table;
   margin: 29px 0px;
   border-radius: 15px;
+  box-shadow: 0 0 10px rgb(253 253 253 / 43%);
+  font-size: 1.2em;
 }
 .burger-img{
-  width: 275px;
+  width: 250px;
   border-radius: 5px 5px 0px 0px;
 }
 .recipe-container{
     padding: 20px;  
-    background-color: rgb(0 0 0 / 59%);
+    background-color: #0c0c0c57;
     width: 250px;
-    
+    box-shadow: 0 0 10px rgb(253 253 253 / 43%);
     display: inline-table;
     margin: 29px 0px;
     border-radius: 15px;
-}
+    font-size:1.2em;
+  }
 .recipe-img{
   width: 250px;
   border-radius: 5px 5px 0px 0px
 }
 .container {
   background-color: #0c0c0c57;
-    padding: 20px;
+    padding: 35px 80px 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(253 253 253 / 43%);
 }
+.title-item {
+  margin: 10px 0px 3px 0px;
+    border-bottom: 3px solid #e4de48;
+}
 #h1-Booking{
   width: 100%;
 }
 #bookingForm{
   padding: 30px;
-    width: 45%;
+    width: 50%;
 }
 form {
   display: flex;
@@ -206,6 +213,8 @@ form {
 
 label {
   margin-bottom: 8px;
+  text-align: left;
+  font-size: .9em;
 }
 
 input, textarea {
@@ -228,16 +237,26 @@ button:hover {
   color:white;
 }
 
-.style1Tab4{
+
+#map {
+  height: 410px;
   width: 50%;
-  padding: 74px 20px;
-  font-size: 1.3em;
-  background-color: #0000003b;
+  margin-top:62px;
 }
-
-
-  
-
-
-
-
+.sideItem-container{
+  box-shadow: 0 0 10px rgb(253 253 253 / 43%);
+  padding: 15px;
+  margin:30px;
+  background-color: #0c0c0c57;
+}
+.price-element{
+  font-size: 1.3em;
+    text-align: right;
+    margin:30px;
+}
+.discript-element{
+  padding:20px;
+}
+.padding-bottom-side{
+  padding:0px 30px 50px;
+}

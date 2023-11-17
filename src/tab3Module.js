@@ -43,11 +43,12 @@ function tab3Component() {
   btn.setAttribute('class', 'tab3-joinBtn'); 
   
   tab3Heading.textContent = 'Side\'s';    
-  subHeading.textContent = 'Prices';    
-  wonderfulText.textContent = ['item1', 'item2', 'item3'];
+  subHeading.textContent = 'Elevating Your Meal: Savory Selections to Enhance Every Bite of Your Culinary Journey. Book your table today and savor the magic of Our Wonderful Restaurant.';    
+  wonderfulText.textContent = 'Elevating Your Meal: Savory Selections to Enhance Every Bite of Your Culinary Journey. Book your table today and savor the magic of Our Wonderful Restaurant.';
 
 
   tab3Div.append(tab3Heading);
+  tab3Div.append(subHeading);
   tab3Div.append(tab3Element);
   
    // Iterate through burgerInfo
@@ -59,11 +60,14 @@ sideItems.forEach(sideItem => {
   // Create elements for title and description
   const titleElement = document.createElement('h2');
   titleElement.textContent = sideItem.title;
+  titleElement.classList.add('title-item');
   
   const descriptionElement = document.createElement('p');
   descriptionElement.textContent = sideItem.description;
+  descriptionElement.classList.add('discript-element')
 
   const priceElement = document.createElement('p');
+  priceElement.classList.add('price-element')
   priceElement.textContent = sideItem.price;
 
   // Append title and description to the sideItem div

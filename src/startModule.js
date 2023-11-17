@@ -53,10 +53,15 @@ function component() {
     myLogo.setAttribute('id', 'my-logo');
     menuNav.setAttribute('id', 'menuNav');
     menuNav.setAttribute('class', 'tabs');
-    item1.setAttribute('class', 'tab');
-    item2.setAttribute('class', 'tab');
-    item3.setAttribute('class', 'tab');
-    item4.setAttribute('class', 'tab');
+    // item1.setAttribute('id', 'tab1');
+    item1.setAttribute('class', 'tab tab1');
+    // item2.setAttribute('id', 'tab2');
+    item2.setAttribute('class', 'tab tab2');
+    // item3.setAttribute('id', 'tab3');
+    item3.setAttribute('class', 'tab tab3');
+    // item4.setAttribute('id', 'tab4');
+    item4.setAttribute('class', 'tab tab4');
+    
     
     tab1.setAttribute('id', 'tab1');
     tab1.setAttribute('class', 'tab-content');
@@ -132,9 +137,7 @@ function component() {
     
 
     myLogo.src = Logo;
-    myLogo.addEventListener('click', function() {
-      StartModule.component();
-    });
+    
 
     item1.textContent = 'Burger\'s';
     item2.textContent = 'Steak\'s';
@@ -181,23 +184,34 @@ function component() {
   }
 
   function showTab(tabId) {
-    // Implement your logic for showing tabs
     const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => tab.classList.remove('active'));
+    tabs.forEach(tab => tab.classList.remove('active'));
+  
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => content.classList.remove('active'));
+  
+    const selectedMenuTab = document.getElementsByClassName(tabId);
+    Array.from(selectedMenuTab).forEach(tab => tab.classList.add('active'));
 
-            const tabContents = document.querySelectorAll('.tab-content');
-            tabContents.forEach(content => content.classList.remove('active'));
-
-            const selectedTab = document.getElementById(tabId);
-            selectedTab.classList.add('active');
-
-            const selectedContent = document.getElementById(tabId);
-            selectedContent.classList.add('active');
-
-}
+    const selectedTab = document.getElementById(tabId);
+    if (selectedTab) {
+      selectedTab.classList.add('active');
+  
+      // const selectedContent = document.getElementById(tabId + '-content'); // Assumes content IDs are tabId + '-content'
+      // if (selectedContent) {
+      //   selectedContent.classList.add('active');
+      // } else {
+      //   console.error(`No content found for tab ID: ${tabId}`);
+      // }
+    } else {
+      console.error(`Tab ID not found: ${tabId}`);
+    }
+  }
+  
  
 
     return {
+      
       component:component,
     };
 })();
